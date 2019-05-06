@@ -21,18 +21,23 @@ coverage
 # nyc test coverage
 .nyc_output
 
+# Node rules:
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
 # node-waf configuration
 .lock-wscript
 
+# Node rules:
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
+# Node rules:
 # Dependency directories
-# Static artifacts
+## Commenting this out is preferred by some people, see
+## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
 node_modules
+# Static artifacts
 jspm_packages
 /deps
 
@@ -58,6 +63,14 @@ jspm_packages
 
 # Elixir Git Ignore
 /_build
+
+# Book build output
+_book
+
+# eBook build output
+*.epub
+*.mobi
+*.pdf
 /cover
 
 # Elm
