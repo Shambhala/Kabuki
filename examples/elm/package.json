@@ -1,0 +1,12 @@
+{
+  "name": "gobeyondui5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+        "test": "elm-test",
+        "buildTimeTravel": "elm make src/Main.elm --output=elm.js --debug",
+        "analyse": "elm-analyse -s -p 3001 -o",
+        "elm:install": "elm package install"
+    }
+}
